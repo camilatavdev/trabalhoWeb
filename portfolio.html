@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <main>
+         <!-- Seção principal do site -->
+        <section class = "topodosite">
+            <!-- Imagem de fundo com opacidade -->
+            <img src = "prog.jpg" style = "width: 100%; opacity: 0.5;">
+            <div class="interface">
+                <div class = "cabecalho">
+                    <!-- Navegação do menu -->
+                    <nav class = "menu">
+                        <ul>
+                            <!-- Itens do menu -->
+                            <li><a href = "#sobremim">Sobre mim</a></li>
+                            <li><a href = "#formacao">Formação acadêmica</a></li>                        
+                            <li><a href = "#projetos">Projetos</a></li>  
+                            <li><a href = "#contato">Contato</a></li>  
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class = "frase">Decifrando os dados e segredos da vida e modelando um futuro de ciência 
+                    tecnológica e avançada</div>
+        </section>
+
+        <!-- Seção "Sobre Mim" -->
+        <section class = "sobre" id = "sobremim">
+            <div class = "interface">
+                <div class="flex">
+                    <div class="txt">
+                        <h1>Sobre mim</h1>
+                        <p>Sou apaixonada por saúde e tecnologia, e tenho um profundo interesse em explorar a interseção 
+                            entre essas duas áreas, com o objetivo de oferecer soluções inovadoras e acessíveis para os 
+                            desafios enfrentados no setor de saúde atualmente, o que acredito que leve a melhorar o 
+                            bem-estar das pessoas. Essa convicção tem me impulsionado a explorar continuamente novas 
+                            oportunidades e a adquirir conhecimentos relevantes que me permitam implementar soluções 
+                            práticas e eficazes, garantindo que os benefícios da tecnologia atuem na medicina personalizada, 
+                            através da aplicação de algoritmos, visualização e análise de conjuntos de dados biológicos, 
+                            modelagem computacional, além de desenvolvimento de softwares especializados, e aplicação de 
+                            inteligência artificial e de técnicas de aprendizado de máquina. </p>
+                    </div>
+                    <div class="img">
+                        <img src = "dnaimagem.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção "Formação Acadêmica" -->
+        <section class = "formacao" id = "formacao">
+            <div class = "interface">
+                <h1 class = "titulo">Formação Acadêmica em andamento</h1>
+                <div class="flex"> 
+                    <div class = "formacaobox">
+                        <img src = "coding.png" width="30%">
+                        <h3>Análise e Desenvolvimento de Sistemas</h3></br>
+                        <p style = "color: aquamarine">Escola Politécnica Uninter</p>
+                    </div>
+
+                    <div class = "formacaobox">
+                        <img src = "dnaicon.png" width="30%">
+                        <h3>Especialização em Bioinformática</h3></br>
+                        <p style = "color: aquamarine">Coursera</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção "Projetos" -->
+        <section class="projetos" id="projetos">
+            <div class="interface">
+                <h1 class="titulo">Projetos GitHub</h1>
+                <div class="flex">
+                    <!-- Links para os projetos no GitHub -->
+                    <a href="https://github.com/camilatavdev/introaoDna" class="imgport" style="background-image: url(imagem1.jpg);">
+                        <div class="sobrepor">Introdução ao DNA</div>
+                    </a>
+                    <a href="https://github.com/camilatavdev/origemdeReplicacao" class="imgport" style="background-image: url(imagem2.jpg);">
+                        <div class="sobrepor">Origem de Replicação</div>
+                    </a>
+                    <a href="https://github.com/camilatavdev/motivosRegulatorios" class="imgport" style="background-image: url(imagem3.jpg);">
+                        <div class="sobrepor">Motivos Regulatórios</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção "Contato" -->
+        <section class="blococontato" id = "contato">
+            <div class = "interface">
+                <h1 class = "titulo">Contato</h1>
+                <div class = "flex">
+                    <!-- Formulário de contato -->
+                    <form> 
+                        <label for="nome">Nome:</label><br>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome..."><br>
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Seu e-mail..."><br>
+                        <label for="mensagem">Mensagem:</label><br>
+                        <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem..."></textarea><br><br>
+                        <input type="submit" value="Enviar">
+                     </form>
+                </div>
+            </div>
+            
+        </section>
+
+
+    </main>
+
+</body>
+</html>
+

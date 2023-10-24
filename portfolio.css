@@ -1,0 +1,289 @@
+/*Todo o documento:*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, #2e1e57, #413277,#50438a);
+    height: 100vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/*Topo do site:*/
+
+.topodosite {
+    display: grid;
+    place-items: center;
+    position: relative; 
+    text-align: center;
+}
+
+.cabecalho {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+/*Lista de menus do cabeçalho:*/
+
+.cabecalho .menu ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 18px;
+    margin-left: 430px; /* Adiciona centralização horizontal */
+    margin-top: 10px;
+}
+
+/*Itens do menu de cabeçalho:*/
+
+.cabecalho .menu ul li {
+    padding: 0 30px;
+}
+
+
+.frase {
+    position: absolute;
+    color: aquamarine; 
+    text-align: center; 
+    top: 45%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 40px; 
+    line-height: 45px;
+}
+
+/*Área central do site:*/
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+/*Elementos de layout flexíveis:*/
+
+.flex{
+    display: flex;
+}
+
+h1.titulo {
+    color: aquamarine;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/*Seção topo do site:*/
+
+.topodosite > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topodosite a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.topodosite nav ul{
+    list-style-type: none;
+}
+
+.topodosite nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/*Seção sobre: */
+
+.sobre {
+    padding: 40px 4%;
+    
+
+}
+
+.sobre .flex{
+    align-items:center;
+    justify-content: center;
+    padding: 35px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+}
+
+.sobre h1 {
+    font-size: 30px;
+    color: aquamarine;
+
+}
+
+.sobre .txt p {
+    color: #fff;
+    font-size: 18px;
+    margin: 40px 0px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.sobre .img img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/*Seção formação acadêmica:*/
+
+
+.formacao h1 {
+    font-size: 30px;
+
+}
+
+.formacao .txt p {
+    color: #fff;
+    font-size: 18px;
+    margin: 40px 0px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.formacao {
+    padding: 40px 8%;
+    
+    
+}
+
+.formacao .formacaobox{
+    color:#fff;
+    padding: 35px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    margin-top: 30px;
+    transition: .2s;
+    text-align: center;
+
+}
+
+.formacao .formacaobox:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+.formacao .flex{
+    gap: 60px;
+}
+
+
+/*Seção projetos:*/
+
+.projetos{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+.projetos .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+
+.imgport {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 3s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+
+}
+
+
+.imgport:hover {
+    background-position: 100% 100%;
+}
+
+.sobrepor{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.sobrepor:hover{
+    opacity: 1;
+}
+
+/*Seção contatos:*/
+
+.blococontato {
+    padding: 80px 4%;
+}
+
+.blococontato .flex {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    text-align: left;
+    width: 60%;
+}
+
+label {
+    font-weight: bold;
+    color: aquamarine;
+
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: aquamarine;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
